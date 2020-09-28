@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row-1">
+        <div class="top-menu">
+            <h1>Caroline Van Gossum</h1>
+            <p id="currentTime"></p>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="col-0">
+            <div class="sidebalk">
+                <img src="img/ubuntu.svg" alt="">
+                <img src="img/mozillafirefox.svg" alt="">
+                <img src="img/googlechrome.svg" alt="">
+                <img src="img/messenger.svg" alt="">
+                <img src="img/vlcmediaplayer.svg" alt="">
+                <img src="img/sublimetext.svg" alt="">
+                <img src="img/spotify.svg" alt="">
+                <img src="img/influxdb.svg" alt="">
+                <img src="img/googlecast.svg" alt="">
+                <img src="img/slack.svg" alt="">
+                <img id="menu" src="img/dots-menu.png" alt="">
+            </div>
+        </div>
+        
+        <div class="col-1">
+            <div class="sidebalk-menu">
+                <h1>Caroline Van Gossum</h1>
+                <p id="currentTimeSmartphone"></p>
+            </div>
+        </div>
+        
+        <div class="col-2 col-content">
+            <div class="screen screen-home">
+                <div class="bar">
+                    <p>home</p>
+                    <div class="icons">
+                        <div class="min"></div>
+                        <div class="expand"></div>
+                        <div class="x">&times;</div>
+                    </div>
+                </div>
+                <div class="files-content">
+                    <div class="files">
+                        <div class="file">
+                            <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                            <h2 id="aboutBtn">about</h2>
+                        </div>
+                        <div class="file">
+                            <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                            <h2 id="skillsBtn">skills</h2>
+                        </div>
+                        <div class="file">
+                            <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                            <h2 id="ProjectsBtn">projects</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- about -->
+                <div id="myAbout" class="modal">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>about</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body about">
+                        <h2>Hello, I'm Caroline!</h2>
+                        <p>I'm a <span>webdeveloper</span> and designer with a big passion for everything that has to do with the <span>internet</span>, such as making websites, creating apps and messing around with Arduino and Raspberry Pi.</p>
+
+                        <p>I graduated in 2019 as a webdeveloper, but wanted to dive deeper into <span>electronics and smart technology</span>, so I decided to expand my knowledge by studying <span>Electronics-ICT</span> at De Nayer in Sint-Katelijne-Waver.</p>
+
+                        <h2>Education</h2>
+                            <ul>
+                                <li>2019 - Student Electronics-ICT @ Thomas More</li>
+                                <li>2019 - Graduated from Interactive Multimedia Management @ Thomas More </li>
+                                <li>2015 - Graduated from Accountancy & IT  @ College Hagelstein</li>
+                            </ul>
+                        <h2>Experience</h2>
+                            <ul>
+                                <li>Student job Administration @ HDK syndicus</li>
+                                <li>Internship Webdevelopment @ Zeron Technologies</li>
+                                <li>Internship Accounting @ Verreth & Partners</li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- skills -->
+                <div id="mySkills" class="modal">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>skills</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body skills">
+                        <div class="grid-item">
+                            <h4>General</h4>
+                            <ul>
+                                <li>HTTP/HTTPS API</li>
+                                <li>GIT</li>
+                                <li>Terminal</li>
+                                <li>Github</li>
+                                <li>Windows</li>
+                                <li>Linux (Ubuntu)</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>Front-end</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>NPM</li>
+                                <li>Angular</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>Back-end</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>PHP</li>
+                                <li>Python</li>
+                                <li>NodeJS</li>
+                                <li>SQL</li>
+                                <li>NoSQL</li>
+                                <li>Drupal</li>
+                                <li>Android</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- projects -->
+                <div id="myProjects" class="modal">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>projects</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body projects">
+                        <div class="files">
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project1Btn">Zifio - thesis</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project2Btn">HDK syndicus</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project3Btn">Kweeni App</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project4Btn">PHP To Do App</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project5Btn">Pietjesbak Game</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project6Btn">Location Clock</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project7Btn">AR Escape Room</h2>
+                            </div>
+                            <div class="file">
+                                <img class="icon" src="img/baseline-folder-24px.svg" alt="">
+                                <h2 id="project8Btn">Python Multiplayer Quiz</h2>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- project1 -->
+                <div id="myProject1" class="modal2">
+                    <div class="modal-content screen">
+                        <div class="bar fixed-bar">
+                            <p>zifio</p>
+                            <div class="icons">
+                                <span class="close">&times;</span>
+                            </div>
+                        </div>
+                        <div class="modal-body project">
+                            <h2>Zifio - Thesis</h2>
+                            <h3>Research, Concept & Development</h3>
+                            <div class="desktop-block">
+                                <div class="left">
+                                    <p>Zifio is een mantelzorgnetwerk waar we mantelzorgers ondersteunen op gebied van planning, communicatie en tips.</p>
+                                    <p>Website: <a href="http://www.zifio.be/">zifio.be</a></p>  
+                                    <img class="icon" src="img/zifio.PNG" alt="Zifio">
+                                </div>
+                                <div class="right">
+                                <h4>Technologies</h4>
+                                    <ul>
+                                        <li>Laravel 5.7.28</li>
+                                        <li>PHP 7.3</li>
+                                        <li>mySQL</li>
+                                    </ul>
+                                    <p>Website: <a href="http://www.zifio.be/">zifio.be</a></p>
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- project2 -->
+                <div id="myProject2" class="modal2">
+                    <div class="modal-content screen">
+                        <div class="bar fixed-bar">
+                            <p>hdk</p>
+                            <div class="icons">
+                                <span class="close">&times;</span>
+                            </div>
+                        </div>
+                        <div class="modal-body project">
+                            <h2>HDK</h2>
+                            <h3>Webdesign, development and support</h3>
+                            <div class="desktop-block">
+                                <div class="left">
+                                    <h4>What</h4>
+                                    <p>I created the new website for HDK in 2016 and still maintain the website.</p>
+                                    <p>Website: <a href="http://www.hdk-info.be/">hdk-info.be</a></p>
+                                    <img class="icon" src="img/hdk_pc.jpg" alt="HDK">
+                                </div>
+                                <div class="right">
+                                <h4>Technologies</h4>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <p>Website: <a href="http://www.hdk-info.be/">hdk-info.be</a><p>
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <!-- project3 -->
+                <div id="myProject3" class="modal2">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>kweeni app</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body project">
+                        <h2>Kweeni App</h2>
+                        <h3>Development</h3>
+                        <p>A team project where users can ask questions about class related subjects. They can login with Facebook and receive answers in real time.</p>
+                        <p>Website: <a href="https://kweeni2018.herokuapp.com/">kweeni.herokuapp.com</a></p>
+                        <img class="icon" src="img/kweeniapp.png" alt="kweeni">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>NodeJS</li>
+                            <li>MongoDB</li>
+                            <li>Sockets</li>
+                            <li>BEM</li>
+                            <li>GULP</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- project4 -->
+                <div id="myProject4" class="modal2">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>to do app</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body project">
+                        <h2>PHP To Do App</h2>
+                        <h3>Development</h3>
+                        <p>Students can create and share todos for a certain subject, the teacher can see the workload of the students.</p>
+                        <p>Website: <a href="http://www.carolinevg.be/todo/login.php">carolinevg.be/todo</a></p>
+                        <img class="icon" src="img/todo.png" alt="PHP To Do">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>PHP</li>
+                            <li>AJAX</li>
+                        </ul>
+                        <a href="https://github.com/CarolineVG/PHP_To_Do">Check on Github</a>
+                    </div>
+                    </div>
+                </div>
+                <!-- project5 -->
+                <div id="myProject5" class="modal2">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>pietjesbak</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body project">
+                        <h2>Pietjesbak Game</h2>
+                        <h3>Development</h3>
+                        <p>The popular café game Pietjesbak made in React Native.</p>
+                        <p>Video: <a href="https://www.youtube.com/watch?v=1wQeKlCbRy8">youtube</a></p>
+                        <img class="icon" src="img/pietjesbak.png" alt="pietjesbak">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React Native</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- project6 -->
+                <div id="myProject6" class="modal2">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>location clock</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body project">
+                        <h2>Location Clock</h2>
+                        <h3>Arduino and Development</h3>
+                        <p>A clock made with Arduino that shows your location when you connect with the webpage.</p>
+                        <p>Website: <a href="https://www.youtube.com/watch?v=hYhfyBhIz1U&feature=youtu.be">youtube</a></p>
+                        <img class="icon" src="img/locatieklok.png" alt="location clock">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>Arduino</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- project7 -->
+                <div id="myProject7" class="modal2">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>blackout</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body project">
+                        <h2>Escape Room AR</h2>
+                        <h3>Arduino and Development</h3>
+                        <p>An escape room app in Augmented Reality, made with Entiti.</p>
+                        <p>Website: <a href="http://www.carolinevg.be/escaperoom/video.mp4">youtube</a></p>
+                        <img class="icon" src="img/escape.png" alt="location clock">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>Entiti</li>
+                            <li>TurboSquid</li>
+                            <li>Blender</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>        
+                <!-- project8 -->
+                <div id="myProject8" class="modal2">
+                    <div class="modal-content screen">
+                    <div class="bar fixed-bar">
+                        <p>python multiplayer quiz</p>
+                        <div class="icons">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-body project">
+                        <h2>Python Multiplayer Quiz</h2>
+                        <h3>Development</h3>
+                        <p>A multiplayer quiz made with python, that runs over a local network</p>
+                        <p>Github: <a href="https://github.com/CarolineVG/PythonQuiz">PythonQuiz</a></p>
+                        <img class="icon" src="img/pythonquiz.png" alt="multiplayer quiz">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Tkinter</li>
+                            <li>SQLite3</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="footer">
+                <div class="screen screen-footer">
+                    <div class="bar">
+                        <p>social</p>
+                        <div class="icons">
+                                <div class="min"></div>
+                                <div class="expand"></div>
+                                <div class="x">&times;</div>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <p>caroline.vangossum@outlook.be</p>
+                        <div class="social">
+                            <div class="linkedin">
+                                <img src="img/linkedin.png" alt="linkedin">
+                                <span><a href="https://www.linkedin.com/in/carolinevg/">LinkedIn</a></span>
+                            </div>
+                            <div class="github">
+                                <img src="img/github-logo.png" alt="github">
+                                <span><a href="https://github.com/CarolineVG">Github</a></span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
