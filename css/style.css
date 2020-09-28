@@ -364,7 +364,7 @@ body {
         display: flex;
         /*min-height: 90vh;*/
         /*min-height: var(--correct-viewheight);*/
-        height: calc(var(--vh)*100);
+        
     }
     /* hide */
     .col-1 {
