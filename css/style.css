@@ -14,7 +14,7 @@
     --h2-font-size: 2em;
     --font-family: 'Fira Mono', monospace;
     --border-radius-screen: 8px;
-    --correct-viewheight: calc(var(--vh, 1vh) * 100);
+    --correct-viewheight: calc(var(--vh, 1vh) * 10);
     --width-modal1: 86%;
     --width-modal2: 82%;
 }
@@ -26,6 +26,7 @@ body {
 .container {
     height: 100vh;
     height: var(--correct-viewheight);
+    /*height: 82vh;*/
     margin: 0 auto;
 }
 .columns {
@@ -51,7 +52,8 @@ body {
     display: flex;
     flex-direction: column;
     flex: 10;
-    margin: 15px;
+    margin: 0px;
+    /*margin: 15px;*/
 }
 .sidebalk-menu {
     display: flex;
@@ -332,6 +334,9 @@ body {
         flex-direction: row;
         margin: 0;
         justify-content: space-between;
+        /* add */
+        /*height: 82vh;*/
+        /*height: var(--correct-viewheight);*/
     }
     /* show*/
     .row-1 {
@@ -357,7 +362,9 @@ body {
     .col-0 {
         flex: 0.5;
         display: flex;
-        min-height: 90vh;
+        /*min-height: 90vh;*/
+        /*min-height: var(--correct-viewheight);*/
+        height: calc(var(--vh)*100);
     }
     /* hide */
     .col-1 {
@@ -375,7 +382,10 @@ body {
         flex: 1;
         width: 32px;
         max-height: 32px;
-        margin: 20px;
+        /*margin: 20px;*/
+        
+        margin: calc(var(--correct-viewheight)/5);
+        /*margin: 0px;*/
         opacity: 0.6;
     }
     .sidebalk #menu {
@@ -408,7 +418,8 @@ body {
         padding: 5%;
     }
     .footer {
-        margin: 10px 0px 20px 100px;
+        /*margin: 10px 0px 20px 100px;*/
+        margin: 10px 0px 0px 100px;
         max-width: 40%;
         max-height: 120px;
         margin-right: calc(100% - 40%);
