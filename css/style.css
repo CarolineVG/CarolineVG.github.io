@@ -266,6 +266,13 @@ body {
     color: #09255f;
 }
 
+.projects .files {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 5%;
+}
+
 .about, .skills, .projects {
     margin-top: 40px;
 }
@@ -334,9 +341,6 @@ body {
         flex-direction: row;
         margin: 0;
         justify-content: space-between;
-        /* add */
-        /*height: 82vh;*/
-        /*height: var(--correct-viewheight);*/
     }
     /* show*/
     .row-1 {
@@ -362,8 +366,6 @@ body {
     .col-0 {
         flex: 0.5;
         display: flex;
-        /*min-height: 90vh;*/
-        /*min-height: var(--correct-viewheight);*/
         
     }
     /* hide */
@@ -382,10 +384,7 @@ body {
         flex: 1;
         width: 32px;
         max-height: 32px;
-        /*margin: 20px;*/
-        
         margin: calc(var(--correct-viewheight)/5);
-        /*margin: 0px;*/
         opacity: 0.6;
     }
     .sidebalk #menu {
@@ -423,6 +422,16 @@ body {
         max-width: 40%;
         max-height: 120px;
         margin-right: calc(100% - 40%);
+    }
+    .projects .files {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: 5%;
+    }
+    
+    .projects .files .files-col2 {
+        margin-left: 8%;
     }
 }
 

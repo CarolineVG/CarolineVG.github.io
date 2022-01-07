@@ -29,6 +29,10 @@ btnProject5 = document.getElementById("project5Btn");
 btnProject6 = document.getElementById("project6Btn");
 btnProject7 = document.getElementById("project7Btn");
 btnProject8 = document.getElementById("project8Btn");
+btnProject9 = document.getElementById("project9Btn");
+btnProject10 = document.getElementById("project10Btn");
+btnProject11 = document.getElementById("project11Btn");
+btnProject12 = document.getElementById("project12Btn");
   
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
@@ -41,6 +45,11 @@ var span8 = document.getElementsByClassName("close")[7];
 var span9 = document.getElementsByClassName("close")[8];
 var span10 = document.getElementsByClassName("close")[9];
 var span11 = document.getElementsByClassName("close")[10];
+var span12 = document.getElementsByClassName("close")[11];
+var span13 = document.getElementsByClassName("close")[12];
+var span14 = document.getElementsByClassName("close")[13];
+var span15 = document.getElementsByClassName("close")[14];
+// aanpassen? 
 
 btnAbout.onclick = function() {
   modal = document.getElementById("myAbout");
@@ -86,6 +95,22 @@ btnProject8.onclick = function() {
   modal = document.getElementById("myProject8");
   document.getElementById("myProject8").style.display = "block";
 }
+btnProject9.onclick = function() {
+  modal = document.getElementById("myProject9");
+  document.getElementById("myProject9").style.display = "block";
+}
+btnProject10.onclick = function() {
+  modal = document.getElementById("myProject10");
+  document.getElementById("myProject10").style.display = "block";
+}
+btnProject11.onclick = function() {
+  modal = document.getElementById("myProject11");
+  document.getElementById("myProject11").style.display = "block";
+}
+btnProject12.onclick = function() {
+  modal = document.getElementById("myProject12");
+  document.getElementById("myProject12").style.display = "block";
+}
 
 span.onclick = function() {
   document.getElementById("myAbout").style.display = "none";
@@ -120,6 +145,22 @@ span10.onclick = function() {
 span11.onclick = function() {
   document.getElementById("myProject8").style.display = "none";
 }
+span12.onclick = function() {
+  document.getElementById("myProject9").style.display = "none";
+}
+
+span13.onclick = function() {
+  document.getElementById("myProject10").style.display = "none";
+}
+
+span14.onclick = function() {
+  document.getElementById("myProject11").style.display = "none";
+}
+
+span15.onclick = function() {
+  document.getElementById("myProject12").style.display = "none";
+}
+
 
 window.onclick = function(event) {
   if (event.target == modal) {
