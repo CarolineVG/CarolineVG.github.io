@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triggs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        :root {
+            --main-bg-color: #DFD9E2; 
+            --main-btn-color: #89909F;
+            --btn-dice-color: #538083;
+            --btn-dice-highlight: #D68C45;
+        }
+        @media only screen and (min-width: 900px) {
+            .container-fluid {
+                width: 900px;
+                max-width: 900px;
+            }
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin: 1em 1em;
+        }
+        .dice {
+            width: 4em;
+            height: 3em
+        }
+        .btn {
+            border-radius: 5px;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: var(--main-btn-color);
+            color: #fff;
+        }
+        .highlight {
+            background-color: var(--btn-dice-highlight) !important;
+        }
+    </style>
+</head>
+<div class="container-fluid">
+    <div class="game">  
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="1-1">1</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="1-2">1</button>
+            </div>
+        </div> 
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="2-1">2</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="2-2">2</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="3-1">3</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="3-2">3</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="4-1">4</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="4-2">4</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="4-3">4</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="5-1">5</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="5-2">5</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="5-3">5</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="6-1">6</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="6-2">6</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="6-3">6</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="7-1">7</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="7-2">7</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="7-3">7</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="7-4">7</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="8-1">8</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="8-2">8</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="8-3">8</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="8-4">8</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="9-1">9</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="9-2">9</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="9-3">9</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="9-4">9</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="10-1">10</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="10-2">10</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="10-3">10</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="10-4">10</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="11-1">11</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="11-2">11</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="11-3">11</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="11-4">11</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="dice">
+                <button type="button" class="btn" id="12-1">12</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="12-2">12</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="12-3">12</button>
+            </div>
+            <div class="dice">
+                <button type="button" class="btn" id="12-4">12</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <button type="button" class="btn-reset" id="reset">Reset</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script>
+    $(".btn").on("click", function(e) {
+        let tmp = "#"+ e.target.id; 
+        if(e.target.classList.contains("highlight")){
+            $(tmp).removeClass("highlight");
+        } else {
+            $(tmp).addClass("highlight");
+        }
+    });
+
+    $(".btn-reset").on("click", function() {
+        const btns = $('.btn');
+        btns.each(function() {
+            $(this).removeClass('highlight');
+        })
+    });
+</script>
+</body>
+</html>
